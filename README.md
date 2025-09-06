@@ -1,62 +1,62 @@
-# My Site (GitHub Pages)
+ï»¿# My Site (GitHub Pages)
 
-## ŒöŠJ‚Ü‚Å‚Ìè‡
+## ï¿½ï¿½ï¿½Jï¿½Ü‚Å‚Ìè‡
 
-1. ‚±‚ÌƒŠƒ|ƒWƒgƒŠ‚ğ GitHub ‚É push ‚·‚é
+1. ï¿½ï¿½ï¿½Ìƒï¿½ï¿½|ï¿½Wï¿½gï¿½ï¿½ï¿½ï¿½ GitHub ï¿½ï¿½ push ï¿½ï¿½ï¿½ï¿½
    ```bash
    git add .
    git commit -m "Add static site (OGP, dark mode, sitemap, etc.)"
    git push origin main
    ```
-2. GitHub ‚ÌƒŠƒ|ƒWƒgƒŠƒy[ƒW‚ğŠJ‚­
-3. Settings -> Pages ‚ÖˆÚ“®
-4. Build and deployment ‚Å Source ‚ğ "Deploy from a branch" ‚Éİ’è
-5. Branch ‚ğ `main` / `/ (root)` ‚Éİ’è‚µ‚Ä Save
-6. ”\•b?”•ªŒãA"Your site is live at ..." ‚Ì URL ‚ª•\¦
-7. •\¦‚³‚ê‚½ URL ‚ÖƒAƒNƒZƒX‚µ“®ìŠm”F
+2. GitHub ï¿½Ìƒï¿½ï¿½|ï¿½Wï¿½gï¿½ï¿½ï¿½yï¿½[ï¿½Wï¿½ï¿½ï¿½Jï¿½ï¿½
+3. Settings -> Pages ï¿½ÖˆÚ“ï¿½
+4. Build and deployment ï¿½ï¿½ Source ï¿½ï¿½ "Deploy from a branch" ï¿½Éİ’ï¿½
+5. Branch ï¿½ï¿½ `main` / `/ (root)` ï¿½Éİ’è‚µï¿½ï¿½ Save
+6. ï¿½ï¿½ï¿½\ï¿½b?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½A"Your site is live at ..." ï¿½ï¿½ URL ï¿½ï¿½ï¿½\ï¿½ï¿½
+7. ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ URL ï¿½ÖƒAï¿½Nï¿½Zï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½F
 
-## ‹@”\ˆê——
-- OGP / Twitter ƒJ[ƒh meta ƒ^ƒO
-- ƒ_[ƒNƒ‚[ƒh (ƒVƒXƒeƒ€ + è“®Ø‘Ö)
-- “Æ© 404 ƒy[ƒW
-- ƒTƒCƒgƒ}ƒbƒv (sitemap.xml) & robots.txt
-- Jekyll –³Œø‰» (.nojekyll)
+## ï¿½@ï¿½\ï¿½ê——
+- OGP / Twitter ï¿½Jï¿½[ï¿½h meta ï¿½^ï¿½O
+- ï¿½_ï¿½[ï¿½Nï¿½ï¿½ï¿½[ï¿½h (ï¿½Vï¿½Xï¿½eï¿½ï¿½ + ï¿½è“®ï¿½Ø‘ï¿½)
+- ï¿½Æï¿½ 404 ï¿½yï¿½[ï¿½W
+- ï¿½Tï¿½Cï¿½gï¿½}ï¿½bï¿½v (sitemap.xml) & robots.txt
+- Jekyll ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (.nojekyll)
 - SVG favicon
 - MIT License
-- About ƒy[ƒW (•¡”ƒy[ƒW\¬ƒTƒ“ƒvƒ‹)
+- About ï¿½yï¿½[ï¿½W (ï¿½ï¿½ï¿½ï¿½ï¿½yï¿½[ï¿½Wï¿½\ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½)
 
-## ƒtƒ@ƒCƒ‹\¬
+## ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½\ï¿½ï¿½
 ```
 .
-„¥„Ÿ index.html
-„¥„Ÿ about.html
-„¥„Ÿ 404.html
-„¥„Ÿ favicon.svg
-„¥„Ÿ sitemap.xml
-„¥„Ÿ robots.txt
-„¥„Ÿ .nojekyll
-„¥„Ÿ assets
-„   „¥„Ÿ style.css
-„   „¤„Ÿ main.js
-„¥„Ÿ LICENSE
-„¤„Ÿ README.md
+ï¿½ï¿½ï¿½ï¿½ index.html
+ï¿½ï¿½ï¿½ï¿½ about.html
+ï¿½ï¿½ï¿½ï¿½ 404.html
+ï¿½ï¿½ï¿½ï¿½ favicon.svg
+ï¿½ï¿½ï¿½ï¿½ sitemap.xml
+ï¿½ï¿½ï¿½ï¿½ robots.txt
+ï¿½ï¿½ï¿½ï¿½ .nojekyll
+ï¿½ï¿½ï¿½ï¿½ assets
+ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ style.css
+ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ main.js
+ï¿½ï¿½ï¿½ï¿½ LICENSE
+ï¿½ï¿½ï¿½ï¿½ README.md
 ```
 
-## ƒJƒXƒ^ƒ}ƒCƒYƒ|ƒCƒ“ƒg
-| €–Ú | à–¾ |
+## ï¿½Jï¿½Xï¿½^ï¿½}ï¿½Cï¿½Yï¿½|ï¿½Cï¿½ï¿½ï¿½g
+| ï¿½ï¿½ï¿½ï¿½ | ï¿½ï¿½ï¿½ï¿½ |
 |------|------|
-| ƒ^ƒCƒgƒ‹/à–¾ | index.html / about.html ‚Ì <title>, meta description |
-| OGP‰æ‘œ | og:image ‚Ì URL ‚ğÀƒtƒ@ƒCƒ‹‚É•ÏX (1200x630 „§) |
-| ƒ_[ƒNƒ‚[ƒh‰Šú’l | main.js ‚Ì•Û‘¶ƒƒWƒbƒN‚Å’²®‰Â”\ |
-| ƒJƒ‰[ƒe[ƒ} | assets/style.css ‚ÌƒOƒ‰ƒf[ƒVƒ‡ƒ“ & F’è‹` |
-| ƒy[ƒW’Ç‰Á | V‚µ‚¢ .html ‚ğì¬‚µƒiƒrƒQ[ƒVƒ‡ƒ“‚ÖƒŠƒ“ƒN’Ç‰Á |
-| ƒ‰ƒCƒZƒ“ƒX | LICENSE ‚ğ“K‹X•ÏX |
+| ï¿½^ï¿½Cï¿½gï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ | index.html / about.html ï¿½ï¿½ <title>, meta description |
+| OGPï¿½æ‘œ | og:image ï¿½ï¿½ URL ï¿½ï¿½ï¿½ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½É•ÏX (1200x630 ï¿½ï¿½ï¿½ï¿½) |
+| ï¿½_ï¿½[ï¿½Nï¿½ï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½l | main.js ï¿½Ì•Û‘ï¿½ï¿½ï¿½ï¿½Wï¿½bï¿½Nï¿½Å’ï¿½ï¿½ï¿½ï¿½Â”\ |
+| ï¿½Jï¿½ï¿½ï¿½[ï¿½eï¿½[ï¿½} | assets/style.css ï¿½ÌƒOï¿½ï¿½ï¿½fï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ & ï¿½Fï¿½ï¿½` |
+| ï¿½yï¿½[ï¿½Wï¿½Ç‰ï¿½ | ï¿½Vï¿½ï¿½ï¿½ï¿½ .html ï¿½ï¿½ï¿½ì¬ï¿½ï¿½ï¿½iï¿½rï¿½Qï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Öƒï¿½ï¿½ï¿½ï¿½Nï¿½Ç‰ï¿½ |
+| ï¿½ï¿½ï¿½Cï¿½Zï¿½ï¿½ï¿½X | LICENSE ï¿½ï¿½Kï¿½Xï¿½ÏX |
 
-## ’Ç‰ÁƒAƒCƒfƒA
-- GitHub Actions ‚Å HTML Lint / Link Check
-- ‰æ‘œÅ“K‰» (webp, avif)
+## ï¿½Ç‰ï¿½ï¿½Aï¿½Cï¿½fï¿½A
+- GitHub Actions ï¿½ï¿½ HTML Lint / Link Check
+- ï¿½æ‘œï¿½Å“Kï¿½ï¿½ (webp, avif)
 - PWA (manifest.json + Service Worker)
-- ƒAƒNƒZƒX‰ğÍ (Analytics / Plausible / Umami)
+- ï¿½Aï¿½Nï¿½Zï¿½Xï¿½ï¿½ï¿½ (Analytics / Plausible / Umami)
 
-## ƒ‰ƒCƒZƒ“ƒX
+## ï¿½ï¿½ï¿½Cï¿½Zï¿½ï¿½ï¿½X
 MIT License
