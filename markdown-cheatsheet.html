@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Markdown チートシート - ゴクリン（ごくりんこ）</title>
+  <meta name="description" content="Markdown記法の基本から応用まで、すぐに使えるチートシート集。" />
+  <link rel="canonical" href="https://gokurinmaster.github.io/My-Site/markdown-cheatsheet.html" />
+  <link rel="icon" href="/My-Site/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <h1>Markdown チートシート</h1>
+        <p>すぐに使える記法集</p>
+      </div>
+      <nav class="main-nav" aria-label="メイン">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="markdown-cheatsheet.html" class="active">Markdown</a>
+        <a href="https://twitter.com/gokurinmaster" target="_blank" rel="noopener" aria-label="Twitter (@gokurinmaster)">Twitter</a>
+        <button id="themeToggle" type="button" aria-label="テーマ切替">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>📝 基本記法</h2>
+      <div class="markdown-example">
+        <h3>見出し</h3>
+        <div class="code-example">
+          <code># 見出し1
+## 見出し2
+### 見出し3
+#### 見出し4
+##### 見出し5
+###### 見出し6</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>強調・斜体</h3>
+        <div class="code-example">
+          <code>**太字** または __太字__
+*斜体* または _斜体_
+***太字斜体*** または ___太字斜体___
+~~取り消し線~~</code>
+        </div>
+        <div class="result-example">
+          <strong>太字</strong><br>
+          <em>斜体</em><br>
+          <strong><em>太字斜体</em></strong><br>
+          <del>取り消し線</del>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📋 リスト</h2>
+      <div class="markdown-example">
+        <h3>箇条書きリスト</h3>
+        <div class="code-example">
+          <code>- 項目1
+- 項目2
+  - サブ項目2-1
+  - サブ項目2-2
+- 項目3
+
+* アスタリスクでも可
++ プラスでも可</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>番号付きリスト</h3>
+        <div class="code-example">
+          <code>1. 最初の項目
+2. 二番目の項目
+3. 三番目の項目
+   1. サブ項目3-1
+   2. サブ項目3-2</code>
+        </div>
+      </div>
+
+      <div class="markdown-example">
+        <h3>チェックリスト（GitHub拡張）</h3>
+        <div class="code-example">
+          <code>- [x] 完了したタスク
+- [ ] 未完了のタスク
+- [ ] 別の未完了タスク</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔗 リンク・画像</h2>
+      <div class="markdown-example">
+        <h3>リンク</h3>
+        <div class="code-example">
+          <code>[リンクテキスト](https://example.com)
+[リンクテキスト](https://example.com "ツールチップ")
+
+&lt;https://example.com&gt;
+
+[参照リンク][1]
+
+[1]: https://example.com "参照先URL"</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>画像</h3>
+        <div class="code-example">
+          <code>![代替テキスト](image.jpg)
+![代替テキスト](image.jpg "画像タイトル")
+
+[![画像リンク](image.jpg)](https://example.com)</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>💻 コード</h2>
+      <div class="markdown-example">
+        <h3>インラインコード</h3>
+        <div class="code-example">
+          <code>`const variable = 'value';`</code>
+        </div>
+        <div class="result-example">
+          <code>const variable = 'value';</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>コードブロック</h3>
+        <div class="code-example">
+          <code>```javascript
+function hello() {
+  console.log('Hello, World!');
+}
+```
+
+```python
+def hello():
+    print("Hello, World!")
+```
+
+```
+言語指定なしのコードブロック
+```</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📊 表</h2>
+      <div class="markdown-example">
+        <div class="code-example">
+          <code>| 左寄せ | 中央寄せ | 右寄せ |
+|:-------|:-------:|-------:|
+| Left   | Center  | Right  |
+| データ1 | データ2  | データ3 |</code>
+        </div>
+        <div class="result-example">
+          <table>
+            <thead>
+              <tr><th style="text-align:left">左寄せ</th><th style="text-align:center">中央寄せ</th><th style="text-align:right">右寄せ</th></tr>
+            </thead>
+            <tbody>
+              <tr><td style="text-align:left">Left</td><td style="text-align:center">Center</td><td style="text-align:right">Right</td></tr>
+              <tr><td style="text-align:left">データ1</td><td style="text-align:center">データ2</td><td style="text-align:right">データ3</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📑 引用・区切り線</h2>
+      <div class="markdown-example">
+        <h3>引用</h3>
+        <div class="code-example">
+          <code>&gt; これは引用です。
+&gt; 複数行の引用も可能です。
+&gt; 
+&gt; &gt; ネストした引用
+&gt; 
+&gt; 通常の引用に戻る</code>
+        </div>
+        <div class="result-example">
+          <blockquote>
+            これは引用です。<br>
+            複数行の引用も可能です。
+            <blockquote>ネストした引用</blockquote>
+            通常の引用に戻る
+          </blockquote>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>水平線</h3>
+        <div class="code-example">
+          <code>---
+または
+***
+または
+___</code>
+        </div>
+        <div class="result-example">
+          <hr>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔧 便利なTips</h2>
+      <div class="markdown-example">
+        <h3>HTML埋め込み</h3>
+        <div class="code-example">
+          <code>&lt;details&gt;
+&lt;summary&gt;クリックして展開&lt;/summary&gt;
+
+ここに隠れたコンテンツ
+
+&lt;/details&gt;</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>改行</h3>
+        <div class="code-example">
+          <code>行末に2つのスペース  
+で改行
+
+または空行で段落分け</code>
+        </div>
+      </div>
+
+      <div class="markdown-example">
+        <h3>エスケープ</h3>
+        <div class="code-example">
+          <code>\* アスタリスクをそのまま表示
+\# ハッシュをそのまま表示
+\` バッククォートをそのまま表示</code>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 GitHub拡張記法</h2>
+      <div class="markdown-example">
+        <h3>シンタックスハイライト</h3>
+        <div class="code-example">
+          <code>```diff
+- 削除された行
++ 追加された行
+```
+
+```mermaid
+graph TD
+A[開始] --> B[処理]
+B --> C[終了]
+```</code>
+        </div>
+      </div>
+      
+      <div class="markdown-example">
+        <h3>メンション・参照</h3>
+        <div class="code-example">
+          <code>@username でユーザーメンション
+#123 でIssue参照
+SHA: 1234567 でコミット参照</code>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">&copy; <span id="year"></span> ゴクリン</footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
