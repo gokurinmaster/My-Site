@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About - My Site</title>
+  <meta name="description" content="サイトについての説明" />
+  <link rel="canonical" href="https://gokurinmaster.github.io/My-Site/about.html" />
+  <link rel="icon" href="/My-Site/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <h1>About</h1>
+        <p>このサイトについて</p>
+      </div>
+      <nav class="main-nav" aria-label="メイン">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <button id="themeToggle" type="button" aria-label="テーマ切替">??</button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>目的</h2>
+      <p>このサイトは GitHub Pages の学習・検証用です。シンプルな構成で公開フローを理解することを目的としています。</p>
+    </section>
+    <section>
+      <h2>構成</h2>
+      <ul>
+        <li>index.html / about.html</li>
+        <li>assets/style.css / assets/main.js</li>
+        <li>ダークモード切替 & OGP 対応</li>
+      </ul>
+    </section>
+    <section>
+      <h2>今後の拡張案</h2>
+      <ol>
+        <li>ブログ記事 (静的生成 / Markdown 変換)</li>
+        <li>パフォーマンス最適化 (画像最適化, lazy loading)</li>
+        <li>Service Worker による簡易 PWA 化</li>
+      </ol>
+    </section>
+  </main>
+  <footer class="site-footer">&copy; <span id="year"></span> My Site</footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

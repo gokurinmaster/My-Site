@@ -5,12 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>My Site - GitHub Pages サンプル</title>
   <meta name="description" content="GitHub Pages で公開するサンプルサイト" />
+  <!-- Canonical & Favicon -->
+  <link rel="canonical" href="https://gokurinmaster.github.io/My-Site/" />
+  <link rel="icon" href="/My-Site/favicon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1e1e24" media="(prefers-color-scheme: dark)">
+  <!-- OGP / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="My Site" />
+  <meta property="og:title" content="My Site - GitHub Pages サンプル" />
+  <meta property="og:description" content="GitHub Pages で公開するシンプルな静的サイトのサンプル" />
+  <meta property="og:url" content="https://gokurinmaster.github.io/My-Site/" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=My+Site" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Site - GitHub Pages サンプル" />
+  <meta name="twitter:description" content="GitHub Pages で公開するシンプルな静的サイトのサンプル" />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=My+Site" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1>My Site</h1>
-    <p>GitHub Pages 公開テスト</p>
+    <div class="header-inner">
+      <div>
+        <h1>My Site</h1>
+        <p>GitHub Pages 公開テスト</p>
+      </div>
+      <nav class="main-nav" aria-label="メイン">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <button id="themeToggle" type="button" aria-label="テーマ切替">??</button>
+      </nav>
+    </div>
   </header>
   <main>
     <section>
@@ -23,6 +48,9 @@
         <li>純粋な HTML / CSS / JavaScript</li>
         <li>ビルド不要</li>
         <li>main ブランチ直下をそのまま公開</li>
+        <li>ダークモード対応 (手動 & OS 設定)</li>
+        <li>OGP / Twitter カード meta タグ</li>
+        <li>sitemap.xml / robots.txt / 404.html / about.html</li>
       </ul>
     </section>
     <section>

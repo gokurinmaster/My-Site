@@ -5,7 +5,7 @@
 1. このリポジトリを GitHub に push する
    ```bash
    git add .
-   git commit -m "Add initial static site"
+   git commit -m "Add static site (OGP, dark mode, sitemap, etc.)"
    git push origin main
    ```
 2. GitHub のリポジトリページを開く
@@ -15,25 +15,48 @@
 6. 数十秒?数分後、"Your site is live at ..." の URL が表示
 7. 表示された URL へアクセスし動作確認
 
-## カスタマイズ
-- `index.html` を編集してコンテンツを変更
-- `assets/style.css` でデザイン調整
-- `assets/main.js` に JavaScript を追加
+## 機能一覧
+- OGP / Twitter カード meta タグ
+- ダークモード (システム + 手動切替)
+- 独自 404 ページ
+- サイトマップ (sitemap.xml) & robots.txt
+- Jekyll 無効化 (.nojekyll)
+- SVG favicon
+- MIT License
+- About ページ (複数ページ構成サンプル)
 
-## ディレクトリ構成
+## ファイル構成
 ```
 .
 ├─ index.html
-└─ assets
-   ├─ style.css
-   └─ main.js
+├─ about.html
+├─ 404.html
+├─ favicon.svg
+├─ sitemap.xml
+├─ robots.txt
+├─ .nojekyll
+├─ assets
+│  ├─ style.css
+│  └─ main.js
+├─ LICENSE
+└─ README.md
 ```
 
-## 追加 Tips
-- `favicon.ico` を置けばブラウザアイコンを変更可能
-- カスタムドメイン: Settings -> Pages -> Custom domain で設定 (DNS に A / CNAME 追加)
-- 404 ページ: `404.html` を追加すると独自404が利用される
-- Jekyll 無効化: 生成を避けたい場合は `.nojekyll` ファイルを追加
+## カスタマイズポイント
+| 項目 | 説明 |
+|------|------|
+| タイトル/説明 | index.html / about.html の <title>, meta description |
+| OGP画像 | og:image の URL を実ファイルに変更 (1200x630 推奨) |
+| ダークモード初期値 | main.js の保存ロジックで調整可能 |
+| カラーテーマ | assets/style.css のグラデーション & 色定義 |
+| ページ追加 | 新しい .html を作成しナビゲーションへリンク追加 |
+| ライセンス | LICENSE を適宜変更 |
+
+## 追加アイデア
+- GitHub Actions で HTML Lint / Link Check
+- 画像最適化 (webp, avif)
+- PWA (manifest.json + Service Worker)
+- アクセス解析 (Analytics / Plausible / Umami)
 
 ## ライセンス
-必要に応じて `LICENSE` を追加してください。
+MIT License

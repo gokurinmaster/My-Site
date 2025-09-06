@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gokurinmaster.github.io/My-Site/sitemap.xml
