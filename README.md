@@ -1,62 +1,62 @@
-﻿# My Site (GitHub Pages)
+# My Site (GitHub Pages)
 
-## ���J�܂ł̎菇
+## 公開までの手順
 
-1. ���̃��|�W�g���� GitHub �� push ����
+1. このリポジトリを GitHub に push する
    ```bash
    git add .
    git commit -m "Add static site (OGP, dark mode, sitemap, etc.)"
    git push origin main
    ```
-2. GitHub �̃��|�W�g���y�[�W���J��
-3. Settings -> Pages �ֈړ�
-4. Build and deployment �� Source �� "Deploy from a branch" �ɐݒ�
-5. Branch �� `main` / `/ (root)` �ɐݒ肵�� Save
-6. ���\�b?������A"Your site is live at ..." �� URL ���\��
-7. �\�����ꂽ URL �փA�N�Z�X������m�F
+2. GitHub のリポジトリページを開く
+3. Settings -> Pages へ移動
+4. Build and deployment の Source を "Deploy from a branch" に設定
+5. Branch を `main` / `/ (root)` に設定して Save
+6. 数分後、"Your site is live at ..." の URL が表示
+7. 表示された URL にアクセスして動作確認
 
-## �@�\�ꗗ
-- OGP / Twitter �J�[�h meta �^�O
-- �_�[�N���[�h (�V�X�e�� + �蓮�ؑ�)
-- �Ǝ� 404 �y�[�W
-- �T�C�g�}�b�v (sitemap.xml) & robots.txt
-- Jekyll ������ (.nojekyll)
+## 機能一覧
+- OGP / Twitter カード meta タグ
+- ダークモード (システム + 手動切替)
+- 独自 404 ページ
+- サイトマップ (sitemap.xml) & robots.txt
+- Jekyll 無視化 (.nojekyll)
 - SVG favicon
 - MIT License
-- About �y�[�W (�����y�[�W�\���T���v��)
+- About ページ (複数ページ構成サンプル)
 
-## �t�@�C���\��
+## ファイル構成
 ```
 .
-���� index.html
-���� about.html
-���� 404.html
-���� favicon.svg
-���� sitemap.xml
-���� robots.txt
-���� .nojekyll
-���� assets
-��  ���� style.css
-��  ���� main.js
-���� LICENSE
-���� README.md
+├── index.html
+├── about.html
+├── 404.html
+├── favicon.svg
+├── sitemap.xml
+├── robots.txt
+├── .nojekyll
+├── assets
+│  ├── style.css
+│  └── main.js
+├── LICENSE
+└── README.md
 ```
 
-## �J�X�^�}�C�Y�|�C���g
-| ���� | ���� |
+## カスタマイズポイント
+| 項目 | 説明 |
 |------|------|
-| �^�C�g��/���� | index.html / about.html �� <title>, meta description |
-| OGP�摜 | og:image �� URL �����t�@�C���ɕύX (1200x630 ����) |
-| �_�[�N���[�h�����l | main.js �̕ۑ����W�b�N�Œ����\ |
-| �J���[�e�[�} | assets/style.css �̃O���f�[�V���� & �F��` |
-| �y�[�W�ǉ� | �V���� .html ���쐬���i�r�Q�[�V�����փ����N�ǉ� |
-| ���C�Z���X | LICENSE ��K�X�ύX |
+| タイトル/説明 | index.html / about.html の &lt;title&gt;, meta description |
+| OGP画像 | og:image の URL を実際ファイルに変更 (1200x630 推奨) |
+| ダークモード初期値 | main.js の保存ロジックで調整可能 |
+| カラーテーマ | assets/style.css のグラデーション & 色定義 |
+| ページ追加 | 新しい .html を作成＋ナビゲーションリンク追加 |
+| ライセンス | LICENSE を適宜変更 |
 
-## �ǉ��A�C�f�A
-- GitHub Actions �� HTML Lint / Link Check
-- �摜�œK�� (webp, avif)
+## 追加アイデア
+- GitHub Actions で HTML Lint / Link Check
+- 画像最適化 (webp, avif)
 - PWA (manifest.json + Service Worker)
-- �A�N�Z�X��� (Analytics / Plausible / Umami)
+- アクセス解析 (Analytics / Plausible / Umami)
 
-## ���C�Z���X
+## ライセンス
 MIT License
