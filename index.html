@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Site - GitHub Pages サンプル</title>
-  <meta name="description" content="GitHub Pages で公開するサンプルサイト" />
+  <title>ゴクリン（ごくりんこ）| Self Introduction</title>
+  <meta name="description" content="ゴクリン（ごくりんこ）の自己紹介サイト。プロフィール・リンク集。" />
   <!-- Canonical & Favicon -->
   <link rel="canonical" href="https://gokurinmaster.github.io/My-Site/" />
   <link rel="icon" href="/My-Site/favicon.svg" type="image/svg+xml" />
@@ -12,14 +12,15 @@
   <meta name="theme-color" content="#1e1e24" media="(prefers-color-scheme: dark)">
   <!-- OGP / Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="My Site" />
-  <meta property="og:title" content="My Site - GitHub Pages サンプル" />
-  <meta property="og:description" content="GitHub Pages で公開するシンプルで静的サイトのサンプル" />
+  <meta property="og:site_name" content="ゴクリン（ごくりんこ）" />
+  <meta property="og:title" content="ゴクリン（ごくりんこ）| Self Introduction" />
+  <meta property="og:description" content="ゴクリン（ごくりんこ）のプロフィール・活動リンク。" />
   <meta property="og:url" content="https://gokurinmaster.github.io/My-Site/" />
   <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=My+Site" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="My Site - GitHub Pages サンプル" />
-  <meta name="twitter:description" content="GitHub Pages で公開するシンプルで静的サイトのサンプル" />
+  <meta name="twitter:title" content="ゴクリン（ごくりんこ）| Self Introduction" />
+  <meta name="twitter:description" content="ゴクリン（ごくりんこ）のプロフィール・活動リンク。" />
+  <meta name="twitter:creator" content="@gokurinmaster" />
   <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=My+Site" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
@@ -27,39 +28,50 @@
   <header class="site-header">
     <div class="header-inner">
       <div>
-        <h1>My Site</h1>
-        <p>GitHub Pages 公開テスト</p>
+  <h1>ゴクリン（ごくりんこ）</h1>
+  <p>自己紹介 & リンク集</p>
       </div>
       <nav class="main-nav" aria-label="メイン">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
+        <a href="https://twitter.com/gokurinmaster" target="_blank" rel="noopener" aria-label="Twitter (@gokurinmaster)">Twitter</a>
         <button id="themeToggle" type="button" aria-label="テーマ切替">🌙</button>
       </nav>
     </div>
   </header>
   <main>
     <section>
-      <h2>概要</h2>
-      <p>このページは <strong>GitHub Pages</strong> でホストされる静的サイトのサンプルです。</p>
+      <h2>プロフィール</h2>
+      <p><strong>名前:</strong> ゴクリン / ごくりんこ</p>
+      <p><strong>活動:</strong> Web / 技術メモ / 試行錯誤中。</p>
+      <p><strong>Twitter:</strong> <a href="https://twitter.com/gokurinmaster" target="_blank" rel="noopener">@gokurinmaster</a></p>
     </section>
     <section>
-      <h2>特徴</h2>
+      <h2>興味あること</h2>
       <ul>
-        <li>軽量な HTML / CSS / JavaScript</li>
-        <li>ビルド不要</li>
-        <li>main ブランチにプッシュするだけで公開</li>
-        <li>ダークモード対応 (手動 & OS 設定)</li>
-        <li>OGP / Twitter カード meta タグ</li>
-        <li>sitemap.xml / robots.txt / 404.html / about.html</li>
+        <li>フロントエンド改善・UI/UX</li>
+        <li>自動化 / ワークフロー整備</li>
+        <li>軽量 / シンプルな構成</li>
       </ul>
     </section>
     <section>
-      <h2>動作確認スクリプト</h2>
-      <button id="helloBtn">クリック</button>
+      <h2>ミニツール</h2>
+      <p>簡単な動作確認用ボタン：</p>
+      <button id="helloBtn">挨拶する</button>
       <p id="result" aria-live="polite"></p>
     </section>
   </main>
-  <footer class="site-footer">&copy; <span id="year"></span> My Site</footer>
+  <footer class="site-footer">&copy; <span id="year"></span> ゴクリン</footer>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ゴクリン（ごくりんこ）",
+    "alternateName": "ごくりんこ",
+    "url": "https://gokurinmaster.github.io/My-Site/",
+    "sameAs": [
+      "https://twitter.com/gokurinmaster"
+    ]
+  }</script>
   <script src="assets/main.js"></script>
 </body>
 </html>
