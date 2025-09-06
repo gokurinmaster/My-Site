@@ -61,16 +61,20 @@
       <p id="result" aria-live="polite"></p>
     </section>
     <section>
-      <h2>最新のポスト</h2>
-      <p>Twitter(X) の最新ポスト（遅延読み込み）:</p>
-      <div id="twitterEmbed">
-        <a class="twitter-timeline" data-height="500" data-dnt="true" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/gokurinmaster">@gokurinmaster のポスト</a>
-        <noscript><p><a href="https://twitter.com/gokurinmaster" target="_blank" rel="noopener">Twitterで見る (@gokurinmaster)</a></p></noscript>
+      <h2>SNS リンク</h2>
+      <div class="social-links">
+        <div class="social-item">
+          <a href="https://twitter.com/gokurinmaster" target="_blank" rel="noopener" class="social-button twitter">
+            <span class="social-icon">🐦</span>
+            <span class="social-text">Twitter で見る</span>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/gokurinmaster?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @gokurinmaster</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
-      <div id="twitterEmbed2">
-        <a class="twitter-timeline" href="https://twitter.com/gokurinmaster?ref_src=twsrc%5Etfw">Tweets by gokurinmaster</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
+      <p><small>※ タイムライン埋め込みは Twitter API の制限により利用できません</small></p>
     </section>
   </main>
   <footer class="site-footer">&copy; <span id="year"></span> ゴクリン</footer>
